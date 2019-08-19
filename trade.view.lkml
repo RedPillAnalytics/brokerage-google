@@ -5,7 +5,7 @@ view: trade {
                           ELSE sc.new_symbol
                         END as symbol
            FROM  brokerage.trade t
-       LEFT JOIN symbol_convert sc
+       LEFT JOIN brokerage.symbol_convert sc
               ON t.security_symbol = sc.old_symbol) ;;
 
     dimension: customer_account_id {
