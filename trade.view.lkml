@@ -27,10 +27,26 @@ view: trade {
       hidden: yes
     }
 
-    dimension_group:trade {
+    dimension_group: trade {
       type: time
-      timeframes: [time, date, week, month, month_num, month_name,year, day_of_week_index, hour_of_day, minute5]
-      sql: ${TABLE}.TRADE_DT ;;
+      timeframes: [
+        raw,
+        time,
+        minute5,
+        hour_of_day,
+        date,
+        day_of_week_index,
+        week,
+        day_of_week,
+        month,
+        month_num,
+        month_name,
+        day_of_month,
+        quarter,
+        day_of_year,
+        year
+      ]
+      sql: CAST(${TABLE}.TRADE_DT AS TIMESTAMP) ;;
     }
 
     dimension: status_type {
