@@ -1,4 +1,4 @@
-connection: "brokerge-google"
+connection: "bigquery-brokerage"
 
 include: "trade.view.lkml"
 include: "customer.view.lkml"
@@ -7,6 +7,8 @@ include: "security.view.lkml"
 include: "trade_type.view.lkml"
 include: "employee.view.lkml"
 include: "manager.view.lkml"
+
+label: "BigQuery Brokerage"
 
 explore: trade {
   join: customer {

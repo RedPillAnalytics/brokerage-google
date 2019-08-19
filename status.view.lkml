@@ -1,5 +1,5 @@
 view: status {
-  sql_table_name: ORACLE_JUMP.STATUS_TYPE ;;
+  sql_table_name: brokerage.status_type ;;
 
   dimension: status_id {
     type: string

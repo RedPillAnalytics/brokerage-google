@@ -1,7 +1,7 @@
 view: customer {
   sql_table_name: (select *,
                           rank() over (partition by customer_id order by action_ts) customer_rank
-                   from ORACLE_JUMP.CUSTOMER
+                   from brokerage.customer
                    ) ;;
 
   dimension: customer_id {

@@ -1,5 +1,5 @@
 view: security {
-  sql_table_name: ORACLE_JUMP.SYMBOLS ;;
+  sql_table_name: brokerage.symbols ;;
 
   dimension: company_name {
     type: string

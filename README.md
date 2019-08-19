@@ -6,7 +6,7 @@ Looker does a really good job of pre-creating the LookML content for the table, 
 
 ```yaml
 view: employee {
-  sql_table_name: ORACLE_JUMP.HR ;;
+  sql_table_name: BROKERAGE.HR ;;
 
   dimension: source_expired {
     type: yesno

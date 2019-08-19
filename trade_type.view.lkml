@@ -1,5 +1,5 @@
 view: trade_type {
-  sql_table_name: ORACLE_JUMP.TRADE_TYPE ;;
+  sql_table_name: brokerage.trade_type ;;
 
   dimension: market_category {
     type: string

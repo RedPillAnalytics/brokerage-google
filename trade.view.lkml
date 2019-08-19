@@ -4,7 +4,7 @@ view: trade {
                           WHEN sc.new_symbol is null then t.security_symbol
                           ELSE sc.new_symbol
                         END as symbol
-           FROM  ORACLE_JUMP.TRADE t
+           FROM  brokerage.trade t
        LEFT JOIN symbol_convert sc
               ON t.security_symbol = sc.old_symbol) ;;
 

@@ -1,5 +1,5 @@
 view: employee {
-  sql_table_name: ORACLE_JUMP.HR ;;
+  sql_table_name: brokerage.hr ;;
 
   dimension: source_expired {
     type: yesno
